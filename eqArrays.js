@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const eqArrays = function(arr1, arr2){
+const eqArrays = function(arr1, arr2) {
   /*
   if (arr1.length === arr2.length){
     if (!arr1.length){
@@ -23,17 +23,17 @@ const eqArrays = function(arr1, arr2){
   }
   */
 
-  let answer = true
+  let answer = true;
   if (arr1.length !== arr2.length) {
-    answer = false 
-  } 
-  for (let i = 0; i<arr1.length ; i++){
-    if (arr1[i] !== arr2[i]){
-      answer = false
+    answer = false;
+  }
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      answer = false;
     }
   }
-  return answer
-}
+  return answer;
+};
 
 // TEST CODE
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS

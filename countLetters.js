@@ -6,19 +6,19 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = function(word){
+const countLetters = function(word) {
   let result = {};
   const wordNoSpace = word.replaceAll(' ', '');
 
-  for (let letter of wordNoSpace){
-    if(result[letter]){
+  for (let letter of wordNoSpace) {
+    if (result[letter]) {
       result[letter] += 1;
     } else {
-      result[letter] = 1
+      result[letter] = 1;
     }
   }
   return result;
-}
+};
 
 const test = 'lighthouse in the house';
 console.log(countLetters(test));
