@@ -1,4 +1,5 @@
 const eqArrays = function(arr1, arr2) {
+  //copy of eqArray fn
   let answer = true;
   if (arr1.length !== arr2.length) {
     answer = false;

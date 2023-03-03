@@ -1,4 +1,5 @@
 const assertEqual = function(actual, expected) {
+  //copy of assertEqual fn
   if (actual === expected) {
     console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -8,12 +9,12 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function(word) {
   let result = {};
-  const wordNoSpace = word.replaceAll(' ', '');
+  const wordNoSpace = word.replaceAll(' ', ''); //remove space
 
   for (let letter of wordNoSpace) {
-    if (result[letter]) {
+    if (result[letter]) { //add one to the value of the key of that letter
       result[letter] += 1;
-    } else {
+    } else { //create the key of that letter
       result[letter] = 1;
     }
   }

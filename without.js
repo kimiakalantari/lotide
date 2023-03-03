@@ -20,7 +20,7 @@ const without = function(source, itemsToRemove) {
   let arr = source;
   for (let i = 0; i < source.length; i++) {
     for (let j = 0; j < itemsToRemove.length; j++) {
-      if (source[i] === itemsToRemove[j]) {
+      if (source[i] === itemsToRemove[j]) { //compare each member of arr1 with every member of arr2
         arr.splice(i,1);
       }
     }

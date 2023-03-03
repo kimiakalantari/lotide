@@ -20,7 +20,7 @@ const flatten = function(arr) {
   let answer = [];
   for (let i = 0; i < arr.length; i++) {
     if (Array.isArray(arr[i])) {
-      for (let j = 0; j < arr[i].length; j++) {
+      for (let j = 0; j < arr[i].length; j++) { //push each member of the nested array in the single result array
         answer.push(arr[i][j]);
       }
     } else {
