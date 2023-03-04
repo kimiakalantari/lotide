@@ -18,7 +18,7 @@ const findKeyByValue = function(obj, name) {
 */
 
 const findKeyByValue = function(obj, name) {
-  for (let key of Object.keys(obj)) { //check to see if the given obj has the given key
+  for (let key of Object.keys(obj)) { //check to see if the given obj keys have the given value
     if (obj[key] === name) {
       return key;
     }
