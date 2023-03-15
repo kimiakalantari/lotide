@@ -17,10 +17,13 @@ const assertArraysEqual = function(arr1, arr2) {
 };
 
 const without = function(source, itemsToRemove) {
-  let arr = source;
+  let arr = [];
   for (let i = 0; i < source.length; i++) {
+    arr.push(source[i]);
+  }
+  for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < itemsToRemove.length; j++) {
-      if (source[i] === itemsToRemove[j]) { //compare each member of arr1 with every member of arr2
+      if (arr[i] === itemsToRemove[j]) { //compare each member of arr1 with every member of arr2
         arr.splice(i,1);
       }
     }
