@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@kimiakalantari/lotide",
   "version": "1.0.0",
   "description": "A mini clone of the [Lodash](https://lodash.com) library.",
   "main": "assertArraysEqual.js",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/kimiakalantari/lotide.git"
   },
-  "author": "",
+  "author": "Kimia Kalantari",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kimiakalantari/lotide/issues"
