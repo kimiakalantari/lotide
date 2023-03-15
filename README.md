@@ -26,15 +26,20 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `head`: Returns the first item in an array; undefined if the array is empty.
-* `tail`: Returns everything but the first item in an array; returns an empty array if provided array is empty.
-* `middle`: Returns the middle-most element(s) of a given array; for arrays with one or two elements, return an empty array.
-* `without`: Returns a subset of a given array, removing unwanted elements.
-* `flatten`: Returns a flattened version of the inputted array.
-* `countOnly`: Returns counts for a specific subset of inputted items; limited to strings.
-* `countLetters`: Returns counts for the given characters of a inputted string.
-* `letterPositions`: Returns all the indicies (zero-based positions) in the string where each character is found.
-* `findKeyByValue`: Returns the first key containing the value of the inputted object and value. If no key with the given value is found, return undefined.
-* `map`: Returns a new array based on a map function which takes in two arguements: An array to map, and a callback function.
-* `takeUntil`: Returns a truthy value based on a given array and callback which are passed as parameters of the takeUntil function.
-* `findKey`: Returns a truthy value based on a given object and callback which are passed as parameters of the findKey function. If no key is found, return undefined.
+* `assertEqual(actual, expected)`: comparing the actual and expected values, print out message to show if they are same or not
+* `assertArraysEqal(arr1, arr2)`: comparing arr1 and arr2, print out message to show if they are same or not
+* `assertObjectsEqual(object1, object2)`: comparing object1 and object2, print out message to show if they are same or not
+* `eqArrays(actual, expected)`: returns true if arr1 has same elements as arr2, otherwise, return false
+* `eqObjects(actual, expected)`: returns true if object1 has same properties as object2, otherwise, return false
+* `countLetters(string)`: return an object with the occurance of each letter
+* `countOnly(allItems, itemsToCount)`: returns an object that count the items from allItems if it exists in itemsToCount with a true value
+* `findKey(object, callback)`: return the key that has a value satisfying the call back function
+* `findKeyByValue(object, value)`: return the key by value
+* `head(array)`: returns the head of array
+* `middle(array)`: returns middle of array
+* `tail(array)`: returns tail ofr array
+* `flatten(array)`: returns the flattened the array
+* `map(array, callback)`: returns an array that satisfies the callback function
+* `letterPositions(string)`: returns an array of the position(s) of input letter(s)
+* `takeUntil(array, callback)`: returns an array that contains all elements before the callback function is satisfied
+* `without(source, itemToRemove)`: returns an array of source without the elements itemToRemove
