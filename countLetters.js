@@ -23,3 +23,5 @@ const countLetters = function(word) {
 
 const test = 'lighthouse in the house';
 console.log(countLetters(test));
+
+module.exports = countLetters;
