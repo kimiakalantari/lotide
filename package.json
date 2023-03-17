@@ -1,8 +1,8 @@
 {
   "name": "@kimiakalantari/lotide",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A mini clone of the [Lodash](https://lodash.com) library.",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
