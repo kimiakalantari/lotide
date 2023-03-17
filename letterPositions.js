@@ -28,17 +28,17 @@ const assertArraysEqual = function(arr1, arr2) {
 const letterPositions = function(sentence) {
   const results = {};
   // logic to update results here
-  for (let letter of sentence) {
-    if (results[letter]) {
-      results[letter].push(sentence.indexOf(letter));
+  for (let i = 0; i < sentence.length; i++) {
+    if (results[sentence[i]]) {
+      results[sentence[i]].push(i);
     } else {
-      results[letter] = [sentence.indexOf(letter)];
+      results[sentence[i]] = [i];
     }
   }
 
   return results;
 };
 
-assertArraysEqual(letterPositions("hello").e, [1]);
+assertArraysEqual(letterPositions("hello").l, [2, 3]);
 
 module.exports = letterPositions;
